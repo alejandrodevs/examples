@@ -31,6 +31,6 @@ class FileNodeTest < MiniTest::Unit::TestCase
   end
 
   def test_file_to_s
-    assert_equal "file.txt | 10KB\n", @node.sorted_tree
+    assert_equal "file.txt | 10KB\n", @node.to_s
   end
 end

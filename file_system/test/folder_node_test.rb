@@ -42,6 +42,6 @@ class FolderNodeTest < MiniTest::Unit::TestCase
                  "\tfile.txt | 10KB\n"\
                  "\tfolder | 15KB\n"\
                  "\t\tfile_2.txt | 5KB\n"\
-                 "\t\tfile.txt | 10KB\n", @node.sorted_tree
+                 "\t\tfile.txt | 10KB\n", @node.to_s
   end
 end

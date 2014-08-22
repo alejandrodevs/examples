@@ -12,7 +12,7 @@ node.children
 #   #<Node:0x00000001bc1370 @path="./test/folder/file.txt">
 # ]
 
-puts node.sorted_tree
+puts node
 # =>  folder | 30KB
 #         file_2.txt | 5KB
 #         file.txt | 10KB

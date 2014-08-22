@@ -22,10 +22,10 @@ class Node
     children.sort_by { |node| [node.size, node.name] }
   end
 
-  def sorted_tree(tabs = 0)
+  def to_s(tabs = 0)
     str = ''
     str << "\t" * tabs
     str << "#{name} | #{size}KB\n"
-    str << sorted_children.map { |node| node.sorted_tree(tabs + 1) }.join
+    str << sorted_children.map { |node| node.to_s(tabs + 1) }.join
   end
 end
